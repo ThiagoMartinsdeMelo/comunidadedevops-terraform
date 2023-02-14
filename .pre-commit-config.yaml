@@ -4,6 +4,5 @@ repos:
     hooks:
       - id: terraform_fmt
         args:
-          - --args=-no-color
-          - --args=-diff
-          - --args=-write=false
+          - --args=-recursive
+      - id: terraform_validate
